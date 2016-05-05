@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+	<title>AJAX and JSON Exercises</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.11.2/lodash.js"></script>
+	<script src="weather-script.js" defer></script>
+	<link rel="stylesheet" href="weather-style.css">
+
+</head>
+
+<body id='container' class='container-fluid'>
+	<header>
+		<h1>daWeather<span id='sun-icon' class="glyphicon glyphicon-cog"></span></h1>
+	</header>
+
+	<nav class="navbar navbar-default">
+	<ul id = 'nav' class="nav navbar-nav">
+	  <!-- This is generated dynamically in js. Use navbar for quick and dirty formatting-->
+      <!-- <li class="active"><a href="#">Portland</a></li> -->
+      <!-- <li id='pdx'><a href="#">Portland</a></li>
+      <li id='miami'><a href="#">Miami</a></li>
+      <li id='chicago'><a href="#">Chicago</a></li>
+      <li id='manhattan'><a href="#">Manhattan</a></li> -->
+    </ul>
+		
+	</nav>
+
+	<div id="data-container">
+		<!-- Dynamic forcast data goes here -->
+	</div>
+
+	<footer>
+		<h5 id='footer-text' class='text-muted'>Data brought to you by the daWeather team and OpenWeatherMap.org!</h5>
+	</footer>
+	
+</body>
+</html>
