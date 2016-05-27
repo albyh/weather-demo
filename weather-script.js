@@ -179,8 +179,8 @@ $.get('http://api.openweathermap.org/data/2.5/weather?q=San%20Francisco&mode=jso
 			if ( data.name === 'Minneapolis'){
 				$('#'+data.id).append( '<div class=\'data\'>'+defaults.labelConditions + 'Purple Rain.'+'</div>');				
 			} else {
-				if (data.weather.description){
-					$('#'+data.id).append( '<div class=\'data\'>'+defaults.labelConditions + data.weather.description+'</div>');				
+				if (data.weather[0].description){
+					$('#'+data.id).append( '<div class=\'data\'>'+defaults.labelConditions + data.weather[0].description+'</div>');				
 				} else { 
 					$('#'+data.id).append( '<div class=\'data\'>'+defaults.labelConditions +'Not available at this time.</div>');	 
 				}
